@@ -4,7 +4,7 @@ Content-Type: application/json
 {
  "id": 6,
  "todo": "Finalize event theme",
- "priority": "LOW",
+ "priority": "HIGH",
  "status": "TO DO",
  "category": "HOME",
  "dueDate": "2021-02-22"
@@ -12,7 +12,15 @@ Content-Type: application/json
 ###API 4
 GET http://localhost:3000/todos/6/
 ###API 2
-GET http://localhost:3000/agenda/?date=2021-12-12
+GET http://localhost:3000/agenda/?date=2021-12-23
 ###API 3
 GET http://localhost:3000/todos/?category=WORK&status=DONE
 ###API 1
+
+PUT http://localhost:3000/todos/3/
+Content-Type: application/json
+
+{
+"status": "DONE"
+}
+###API 5
